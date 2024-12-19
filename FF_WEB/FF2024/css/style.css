@@ -1,0 +1,237 @@
+:root {
+    --yasil: #a1c927;
+    --qirmizi: #fd634d;
+}
+header {
+    text-align: center;
+    position: relative;
+    height: 100vh;
+    background: url('../img/headerbg.jpg') 60% 50%/cover;
+}
+nav, #title { 
+    width: 100%;
+    position: absolute;
+}
+nav { top: 40px }
+#title { bottom: 16vh; } 
+menu li a {
+    display: inline-block;
+    font: bold .8em 'Avenir Next Rounded', sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 10px 0 0 0
+}
+h1, h5 {
+    font-weight: 400;
+    font-family: 'Myriad Pro', sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+}
+h1 { font-size: 2em; }
+h2 {
+    font: 2em 'Open Sans';
+    text-transform: uppercase;
+}
+h3 {
+    font: 1.5em 'Open Sans';
+    padding: 20px 0;
+}
+h5 {font-size: 1em;
+    letter-spacing: 3px;
+}
+h6 {
+    font: 1em 'Montserrat';
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.fa-droplet{
+    padding-top: 20px;
+    color: #e3e9e9;
+    width: 15px;
+    height: 25px;
+}
+.col33 p{
+    color: #656e74;
+    padding-top: 20px;
+    line-height: 2em;
+}
+.col33{
+    text-align: center; 
+}
+.banner{
+    background: url(../img/banner.png);
+    
+    height:100vh;
+    text-align: center;
+
+}
+
+.banner .txt h2{
+    font: 400 "Open Sans", sans-serif;
+    color: #fff;
+    text-align: center;
+    padding-top: 240px;
+}
+.banner .txt p{
+    line-height: 23px;
+    color: #fff;
+    font: 400 "Open Sans", sans-serif; 
+    text-align: center;
+}
+footer{
+
+    background-color: #0a0a0a;
+    color: #fff;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+}
+footer h6 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+footer p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-column {
+    flex: 1;
+    margin-right: 20px;
+    min-width: 250px;
+}
+
+.footer-column form {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-column form input {
+    padding: 8px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 4px;
+}
+
+.footer-column form button {
+    padding: 10px;
+    background-color: #8bc34a;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.footer-column form button:hover {
+    background-color: #7cb342;
+}
+
+.footer-social {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer-social a {
+    margin: 0 10px;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.footer-social a:hover {
+    color: #8bc34a;
+}
+
+.footer-social i {
+    font-size: 24px;
+}
+.resources{
+    margin: auto;
+    background-color: #0c1119;
+    width: 420px;
+}
+.resources h6{
+    padding-top: 4em;
+    color: #fff;
+}
+.resources p{
+    padding: 28px 0 50px 0;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #8297a7;
+    margin: 10px 0;
+
+      
+}
+.bgyasil { background-color: var(--yasil) }
+.bgqirmizi { background-color: var(--qirmizi) }
+.bgag { background-color: #fff }
+.txtyasil { color: var(--yasil) }
+.txtqirmizi { color: var(--qirmizi) }
+.txtag { color: #fff }
+.height50 { min-height: 50vh; }
+.artpadding { padding: 50px 40px 0 40px }
+
+#art4 { padding: 70px 0 }
+#art4 .col25 { padding: 35px 10px }
+#art4 .col25 i { font-size: 2.8em }
+#art4 .col25 p, #art4 .col25 a {  
+    font: .8em/1.5 'Proxima Nova';
+    padding: 10px 0;
+}
+#fitnessfirst { background: url('../img/fitnessfirst.jpg') center/cover;}
+#yourbody { background: url('../img/yourbody.jpg') center/cover;}
+#lifestyle { background: url('../img/lifestyle.jpg') center/cover;}
+#summeroffun { background: url('../img/summeroffun.jpg') center/cover;}
+#grape { background: url('../img/grape.jpg') center/cover;}
+#mango { background: url('../img/mango.jpg') center/cover;}
+
+
+@media only screen and (min-width: 768px) {
+    header { text-align: initial; }
+    nav { padding: 0 50px; }
+    menu { 
+        float: right; 
+    }
+    menu li { 
+        display: inline-block; 
+        padding: 0 2vw;
+    }
+    #title { 
+        width: initial;
+        text-align: right; 
+        left: 110px;
+    }
+    h1 { font-size: 2.5em }
+    h2 { font-size: 2.2em }
+    h5 { padding: 15px 20px 0 0 }
+
+    .container { 
+        max-width: 1180px;
+        margin: auto;
+    }
+    .row::after {
+        display: table;
+        content: '';
+        clear: both;
+    }
+    .fleft { float: left}
+    .fright { float: right}
+    .col25 { width: 25% }
+    .col33 { width: 33.33%; }
+    .col66 { width: 66.66% }
+    .banner .txt{
+        width: 670px;
+        height: 100%;
+        margin: auto;
+    }
+}
